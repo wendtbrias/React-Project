@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.weather-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_search {
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.form_search input {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+}
+
+.weather-information {
+  padding: 1rem;
+  text-align: center;
+}
+
+.weather-information .title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.weather-information .sub-title {
+  text-align: center;
+  font-weight: 400;
+  margin-top: 5px;
+  color: #fff;
+}
+
+.weather-information .weather_temp {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.weather-information .weather_temp h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.weather-information .cloud {
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.weather-information .weather_forecast {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 40px;
+}
+
+.weather_forecast .weather_forecast_item {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.weather_forecast_item h4 {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 540px) {
+  .weather-container .cold {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        50deg,
+        rgba(11, 11, 11, 0.3),
+        rgba(12, 12, 12, 0.3)
+      ),
+      url("https://github.com/TylerPottsDev/weather-react/blob/master/src/assets/cold-bg.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .weather-container .warm {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(
+        50deg,
+        rgba(11, 11, 11, 0.3),
+        rgba(12, 12, 12, 0.3)
+      ),
+      url("https://github.com/TylerPottsDev/weather-react/blob/master/src/assets/warm-bg.jpg?raw=true");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+/* .weather-container .cold {
+    width:100%;
+    min-height:100vh;
+    background-image:url
+} */
