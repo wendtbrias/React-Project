@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "quicksand", sans-serif;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fd9644;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-container {
+  width: 40%;
+}
+
+.todo-container .title {
+  text-align: center;
+  font-size: 2.9rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.todo-container .todo-form {
+  width: 90%;
+  margin: 50px auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-form .form-input {
+  width: 78%;
+  position: relative;
+}
+
+.todo-form .form-input input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 3.1rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+}
+
+#add {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  background-color: orangered;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.todo-form .form-filter {
+  width: 20%;
+}
+
+.todo-form .form-filter select {
+  width: 100%;
+  background-color: #fff;
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+}
+
+.todo-container-item {
+  width: 100%;
+}
+
+.todo-container-item .todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 2px;
+  margin-top: 12px;
+  height: 35px;
+  transition: all 0.4s ease;
+}
+
+.todo-container-item .todo-item .actions {
+  display: flex;
+  align-items: center;
+}
+
+.todo-container-item .todo-item h4 {
+  padding-left: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.todo-container-item .todo-item.finish {
+  opacity: 0.6;
+}
+
+.todo-container-item .todo-item.finish h4 {
+  text-decoration: line-through;
+}
+
+.todo-container-item .todo-item .actions i {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.todo-container-item .todo-item .actions button {
+  border: none;
+  outline: none;
+  height: 35px;
+  display: block;
+  padding: 0 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0px;
+}
+
+.todo-container-item .todo-item .actions .check-icon {
+  background-color: mediumseagreen;
+}
+
+.todo-container-item .todo-item .actions .edit-icon {
+  background-color: cornflowerblue;
+}
+
+.todo-container-item .todo-item .actions .delete-icon {
+  background-color: crimson;
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .todo-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
